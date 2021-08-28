@@ -1,0 +1,19 @@
+/* Footer */
+
+footer {
+    background-color: $footer-color;
+    border-top: 6px nth($colores, 5) solid;
+    margin-top: 2em;
+	display: flex;
+	justify-content: center;
+
+    a {
+        justify-content: space-around;
+        padding: 2em;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px) scale(1.2) rotate(-15deg);
+        }
+    }
+}

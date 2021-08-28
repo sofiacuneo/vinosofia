@@ -1,0 +1,113 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: nth($colores, 1);
+}
+
+/* Header */
+
+header {
+    background-color: $header-color;
+    border-bottom: 6px nth($colores, 3) solid;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    nav {
+        text-align: center;
+
+         
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            justify-content: center;
+            width: $ancho - 80%;
+            position:relative;
+            font-size: 1em;
+
+            a {
+                text-decoration: none;
+                color: nth($colores, 4);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                transition: all 0.2s ease-in-out;
+
+                &:hover, &:active {
+                    letter-spacing: 3px;
+                    text-decoration: underline;
+                    color: nth($colores, 5);
+                    transform: scale(0.5); 
+                }
+            }
+
+        }
+
+    }
+
+    }
+
+}
+
+.logo {
+    @include fonts(2.3em, ('Otomanopee One', sans-serif) , nth($colores, 1), 0, 5px);
+    text-align: center;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+
+.bg-inicio {
+    background-image: url('../images/bg-inicio.jpg');
+    @extend %bg-header;
+}
+
+.bg-historia {
+    background-image: url('../images/bg-historia.jpg');
+    @extend %bg-header;
+}
+
+.bg-agenda {
+    background-image: url('../images/bg-agenda.jpg'); 
+    @extend %bg-header;
+}
+
+.bg-catalogo {
+    background-image: url('../images/bg-catalogo.jpg');
+    @extend %bg-header;
+}
+
+.bg-contacto {
+    background-image: url('../images/bg-contacto.jpg');
+    @extend %bg-header;
+}
+
+/* animacion logo */
+
+.animacion {
+    animation: changeTypo 4s;
+}
+
+@keyframes changeTypo {
+    0% {
+        letter-spacing: 10px;
+    }
+    15% {
+        letter-spacing:5px;
+    }
+    25% {
+        letter-spacing: 15px;
+
+    }
+    100% {
+        letter-spacing: 10px;
+    }
+}

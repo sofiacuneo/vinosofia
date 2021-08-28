@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* Content */
+
+main {
+    width: $ancho - 20%;
+    @include orden(2em auto,
+    flex);
+    .contenido-izq,
+    .contenido-der {
+        width: $ancho;
+        padding-right: 1em;
+    }
+    .contenido-izq {
+        padding-right: 1em;
+    }
+}
+
+.quienes-somos {
+    @include orden(2em 0 0 0,
+    flex);
+}
+
+.historia {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    @include fonts(5em,
+    ('Otomanopee One', sans-serif),
+    nth($colores, 4),
+    3.5em,
+    5px);
+    text-align: center;
+}
+
+h2 {
+    @include fonts(1.8em,
+    ('Otomanopee One', sans-serif),
+    nth($colores, 2),
+    0 0 0.5em 0,
+    2px);
+}
+
+.texto-1 {
+    @include fonts(1em,
+    ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif),
+    nth($colores, 4),
+    0.5em 0,
+    0);
+}
+
+.texto-2 {
+    @include fonts(0.8em,
+    ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif),
+    nth($colores, 4),
+    1em 0,
+    0);
+}
+
+.destacado,
+.destacado a {
+    @include fonts(1.1em,
+    ('Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif),
+    nth($colores, 5),
+    0,
+    0);
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: $footer-color;
+}
+
+.agenda {
+    width: $ancho;
+    display: flex;
+    flex-wrap: wrap;
+    .texto-1 {
+        width: $ancho - 50%;
+        justify-content: space-between;
+        padding: 0.5em;
+    }
+}
+
+.catalogo-vinos {
+    width: $ancho;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .vino {
+        justify-content: space-around;
+        padding: 0 5%;
+        text-align: center;
+    }
+}
+
+iframe {
+    @extend %border-bordo;
+}

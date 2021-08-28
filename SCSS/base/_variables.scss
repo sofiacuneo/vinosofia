@@ -1,0 +1,8 @@
+@import 'extends';
+@import 'colores';
+
+/* Variables */
+$bg-color: nth($colores, 1);
+$header-color: nth($colores, 2);
+$footer-color: nth($colores, 3);
+$border-1: 6px nth($colores, 3) solid;

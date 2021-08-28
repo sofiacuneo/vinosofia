@@ -1,0 +1,14 @@
+/* Mixins*/
+
+@mixin fonts($size, $family, $color, $padding, $spacing) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+    padding: $padding;
+    letter-spacing: $spacing;
+}
+
+@mixin orden($margin, $display) {
+    margin: $margin;
+    display: $display;
+}
