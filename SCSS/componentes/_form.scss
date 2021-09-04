@@ -1,0 +1,22 @@
+form {
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+input, textarea{
+	font-family: Trebuchet MS;
+	border: 0;
+	border-bottom: 4px darken($bordo, 10%) solid;
+	border-radius: 5px;
+	padding: 10px;
+	margin:0.5em auto;
+	font-size: 16px;
+	width: 80%;
+}
+input:focus, textarea:focus {
+	background: #F2F2EE; 
+}
+
+button {
+    margin:0 auto;
+}

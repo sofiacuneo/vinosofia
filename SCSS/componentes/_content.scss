@@ -4,8 +4,7 @@
 
 main {
     width: $ancho - 20%;
-    @include orden(2em auto,
-    flex);
+    @include orden(2em auto, flex);
     .contenido-izq,
     .contenido-der {
         width: $ancho;
@@ -17,20 +16,26 @@ main {
 }
 
 .quienes-somos {
-    @include orden(2em 0 0 0,
-    flex);
+    @include orden(2em 0 0 0, flex);
 }
 
-.historia {
+.flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.index {
+    background-color: rgba(black, 0.3);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
     @include fonts(5em,
     ('Otomanopee One', sans-serif),
     nth($colores, 4),
-    3.5em,
+    2em,
     5px);
     text-align: center;
 }
@@ -49,6 +54,10 @@ h2 {
     nth($colores, 4),
     0.5em 0,
     0);
+}
+
+.index .texto-1 {
+    text-align: center;
 }
 
 .texto-2 {
@@ -87,13 +96,28 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2em;
     .vino {
         justify-content: space-around;
-        padding: 0 5%;
+        padding: 1.5em;
+        margin: 1.5em;
         text-align: center;
+        background-color: darken($bordo, 10%);
+        border-radius: 2em;
     }
 }
 
 iframe {
     @extend %border-bordo;
 }
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+    

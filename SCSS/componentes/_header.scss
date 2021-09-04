@@ -40,13 +40,11 @@ header {
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 font-weight: bold;
                 text-align: center;
-                transition: all 0.2s ease-in-out;
+                
 
-                &:hover, &:active {
-                    letter-spacing: 3px;
+                &:hover {
                     text-decoration: underline;
-                    color: nth($colores, 5);
-                    transform: scale(0.5); 
+                    color: nth($colores, 5);  
                 }
             }
 
@@ -65,35 +63,10 @@ header {
     text-transform: uppercase;
 }
 
-.bg-inicio {
-    background-image: url('../images/bg-inicio.jpg');
-    @extend %bg-header;
-}
-
-.bg-historia {
-    background-image: url('../images/bg-historia.jpg');
-    @extend %bg-header;
-}
-
-.bg-agenda {
-    background-image: url('../images/bg-agenda.jpg'); 
-    @extend %bg-header;
-}
-
-.bg-catalogo {
-    background-image: url('../images/bg-catalogo.jpg');
-    @extend %bg-header;
-}
-
-.bg-contacto {
-    background-image: url('../images/bg-contacto.jpg');
-    @extend %bg-header;
-}
-
 /* animacion logo */
 
 .animacion {
-    animation: changeTypo 4s;
+    animation: changeTypo 5s;
 }
 
 @keyframes changeTypo {

@@ -80,6 +80,7 @@
             <img src="images/bg-contacto.png" class="d-block w-100" alt="contacto">
             <div class="carousel-caption d-none d-md-block">
                 <h1>Contacto</h1>
+                <p class="texto-1">Los invitamos a llenar este formulario para reservar su visita a la bodega. Les responderemos a la brevedad. ¡Gracias!</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -107,27 +108,27 @@
 	<!-- Cierra carousel -->
 
     <!-- main -->
-    <main>
+    <main class="flex-column">
         <!-- section 1 -->
-        <section class="contenido-izq">  
-          <p class="texto-1">Los invitamos a llenar este formulario para reservar su visita a la bodega. Les responderemos a la brevedad. ¡Gracias!</p>
+        <section>  
+          
           <!-- Formulario -->
-    
-                <!-- Formulario -->
-                <h2>Contactanos</h2>
-                <div class="mb-3 me-1">
-                    <label for="exampleFormControlInput1" class="destacado">E-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3 me-1">
-                    <label for="exampleFormControlTextarea1" class="destacado">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
+          <form action="enviar.php" method="POST" name="contact-form">
+            <input type="text" id="name" name="nombre" placeholder="Nombre">
 
-                  <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-light btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Enviar
-                  </button>
+            <input type="email" name="email" id="mail" placeholder="E-mail">
+        
+            <input type="subject" id="fecha" name="fecha" placeholder="Fecha elegida">
+        
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Enviar
+            </button>
+        </form>
+        
+                  
 
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -150,16 +151,14 @@
             <!-- cierra formulario-->
 
           <p class="texto-2">Si quieren dejar otros comentarios o sugerencias, pueden enviarnos un mail a: <span class="destacado">comentarios@vinosofia.com</span> </p>
-
-          <p class="texto-2">Si desean etiquetarnos en fotos de sus visitas a la bodega o de los productos recibidos, recuerden seguirnos en instagram como: <span class="destacado">@vinosofia</span>. Etiquetarnos en sus fotos o stories. Estén atentos a los sorteos mensuales</p>
       </section>
       <!-- cierra section 1 -->
 
         <!-- section 2 -->
-        <section class="contenido-der">
+        <section>
 
             <h2>Dónde encontrarnos</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97749195639!2d-68.89353859948214!3d-32.88333032049617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1626050699236!5m2!1ses!2sar" width="600" height="350" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53608.97749195639!2d-68.89353859948214!3d-32.88333032049617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1626050699236!5m2!1ses!2sar" width="800" height="350" allowfullscreen="" loading="lazy"></iframe>
         </section>
         <!-- cierra section 2 -->
     </main>

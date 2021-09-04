@@ -2,8 +2,7 @@
 
 footer {
     background-color: $footer-color;
-    border-top: 6px nth($colores, 5) solid;
-    margin-top: 2em;
+    border-top: 6px darken($bordo, 10%) solid;
 	display: flex;
 	justify-content: center;
 
@@ -16,4 +15,11 @@ footer {
             transform: translateY(-5px) scale(1.2) rotate(-15deg);
         }
     }
+}
+
+.footer-index {
+    width: $ancho;
+    border-top: 2px white solid;
+    background-color: transparent;
+    margin-top: 2em;
 }
