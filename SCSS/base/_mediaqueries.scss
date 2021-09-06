@@ -1,7 +1,7 @@
 /*Tablet*/
 
 @media only screen and (min-width: 401px) and (max-width: 900px) {
-    main {
+    section {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -33,20 +33,15 @@
 /* Mobile */
 
 @media only screen and (max-width: 400px) {
-    main {
+    section {
         width: $ancho;
-        @include orden(1em auto, flex);
-        flex-direction: column;
-    }
-    .quienes-somos {
-        width: $ancho;
-        @include orden(1em auto, flex);
+        @include orden(0.5em auto, flex);
         flex-direction: column;
     }
     .contenido-izq,
     .contenido-der {
         width: $ancho;
-        margin: 1em;
+        margin: 0.5em;
     }
     .logo {
         font-size: 1.8em;
@@ -57,6 +52,7 @@
     }
     h2 {
         font-size: 1.5em;
+        text-align: center;
     }
     li {
         width: 30%;
@@ -64,15 +60,20 @@
     }
     .texto-1 {
         font-size: 0.9em;
+        text-align: center;
     }
+
     .agenda .texto-1 {
-        width: 90%;
+        width:90%;
         display: flex;
         flex-direction: column;
     }
     iframe {
         border: 0;
         width: 100%;
+    }
+    input, textarea{
+        width: $ancho;
     }
     footer a {
         justify-content: space-between;

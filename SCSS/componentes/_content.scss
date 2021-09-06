@@ -29,6 +29,7 @@ main {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    text-align: center;
 }
 
 h1 {
@@ -54,10 +55,7 @@ h2 {
     nth($colores, 4),
     0.5em 0,
     0);
-}
-
-.index .texto-1 {
-    text-align: center;
+    
 }
 
 .texto-2 {

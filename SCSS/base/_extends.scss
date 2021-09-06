@@ -1,13 +1,6 @@
 @import 'colores';
 /* Extends */
 
-
-%bg-header {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
 %border-bordo {
     border: 4px solid darken($bordo, 10%);
 }
