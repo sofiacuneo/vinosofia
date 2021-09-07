@@ -26,6 +26,10 @@
         border: 0;
         width: 100%;
     }
+    
+    input, textarea{
+        width: $ancho;
+    }
 
 }
 
