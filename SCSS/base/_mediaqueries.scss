@@ -37,22 +37,23 @@
 /* Mobile */
 
 @media only screen and (max-width: 400px) {
-    section {
+    main, .contenido-izq,
+    .contenido-der {
         width: $ancho;
         @include orden(0.5em auto, flex);
         flex-direction: column;
+        padding: 0 0.5em;
     }
-    .contenido-izq,
-    .contenido-der {
-        width: $ancho;
-        margin: 0.5em;
-    }
+    
     .logo {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     h1 {
-        font-size: 2.5em;
-        padding: 0.5em;
+        font-size: 2em;
+        padding: 0.2em;
+    }
+    .index h1 {
+        padding: 1em 0;
     }
     h2 {
         font-size: 1.5em;
@@ -68,9 +69,11 @@
     }
 
     .agenda .texto-1 {
-        width:90%;
+        width:80%;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+
     }
     iframe {
         border: 0;

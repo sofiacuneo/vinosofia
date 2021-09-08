@@ -78,16 +78,16 @@ header nav ul li a:hover {
 
 @keyframes changeTypo {
   0% {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
   }
   15% {
     letter-spacing: 5px;
   }
   25% {
-    letter-spacing: 15px;
+    letter-spacing: 12px;
   }
   100% {
-    letter-spacing: 10px;
+    letter-spacing: 8px;
   }
 }
 /* Content */
@@ -292,26 +292,26 @@ button {
 }
 /* Mobile */
 @media only screen and (max-width: 400px) {
-  section {
+  main, .contenido-izq,
+.contenido-der {
     width: 100%;
     margin: 0.5em auto;
     display: flex;
     flex-direction: column;
-  }
-
-  .contenido-izq,
-.contenido-der {
-    width: 100%;
-    margin: 0.5em;
+    padding: 0 0.5em;
   }
 
   .logo {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   h1 {
-    font-size: 2.5em;
-    padding: 0.5em;
+    font-size: 2em;
+    padding: 0.2em;
+  }
+
+  .index h1 {
+    padding: 1em 0;
   }
 
   h2 {
@@ -330,9 +330,10 @@ button {
   }
 
   .agenda .texto-1 {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   iframe {
