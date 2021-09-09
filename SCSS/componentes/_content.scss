@@ -15,9 +15,6 @@ main {
     }
 }
 
-.side {
-    @include orden(2em 0 0 0, flex);
-}
 
 .flex-column {
     display: flex;
@@ -104,9 +101,13 @@ h2 {
         border-radius: 2em;
     }
 }
-
+.imagen-redondeada {
+    width: 90%;
+    border-radius: 2em;
+}
 iframe {
     @extend %border-bordo;
+    border-radius: 2em;
 }
 
 video {
