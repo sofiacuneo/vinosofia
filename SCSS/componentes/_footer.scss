@@ -3,13 +3,18 @@
 footer {
     background-color: $footer-color;
     border-top: 6px darken($bordo, 10%) solid;
-	display: flex;
-	justify-content: center;
+    text-align: center;
     margin-top: 1em;
+    padding: 0.5em;
+}
+
+.redes { 
+    display: flex;
+    justify-content: center;
 
     a {
         justify-content: space-around;
-        padding: 2em;
+        padding: 1em;
         transition: all 0.4s ease-in-out;
 
         &:hover {

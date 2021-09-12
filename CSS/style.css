@@ -110,6 +110,11 @@ main .contenido-izq {
   flex-direction: column;
 }
 
+.side {
+  margin: 2em 0 0 0;
+  display: flex;
+}
+
 .index {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100vw;
@@ -195,6 +200,7 @@ h2 {
 }
 
 .imagen-redondeada {
+  max-width: 800px;
   width: 90%;
   border-radius: 2em;
 }
@@ -217,16 +223,21 @@ video {
 footer {
   background-color: #346751;
   border-top: 6px #4e0b25 solid;
+  text-align: center;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.redes {
   display: flex;
   justify-content: center;
-  margin-top: 1em;
 }
-footer a {
+.redes a {
   justify-content: space-around;
-  padding: 2em;
+  padding: 1em;
   transition: all 0.4s ease-in-out;
 }
-footer a:hover {
+.redes a:hover {
   transform: translateY(-5px) scale(1.2) rotate(-15deg);
 }
 
@@ -242,10 +253,10 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
 }
 
 input, textarea, select {
-  justify-content: center;
   font-family: Trebuchet MS;
   border: 0;
   border-bottom: 4px #4e0b25 solid;
@@ -266,21 +277,20 @@ button {
 
 /*Tablet*/
 @media only screen and (min-width: 401px) and (max-width: 1000px) {
-  main {
+  main, .side {
     width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
     padding: 0;
-    text-align: center;
   }
 
-  section {
+  section, .contenido-izq,
+.contenido-der {
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
+    margin-top: 1em;
+    padding: 0 1em;
   }
 
   .logo {
@@ -288,8 +298,8 @@ button {
   }
 
   h1 {
-    font-size: 3em;
-    padding: 1.5em;
+    font-size: 2.5em;
+    padding: 1em;
   }
 
   h2 {
@@ -301,13 +311,13 @@ button {
     width: 100%;
   }
 
-  input, textarea {
+  input, textarea, select {
     width: 95%;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 400px) {
-  main {
+  main, .side {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -358,7 +368,7 @@ button {
     text-align: left;
   }
 
-  input, textarea {
+  input, textarea, select {
     width: 100%;
   }
 

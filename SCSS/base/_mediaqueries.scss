@@ -1,25 +1,25 @@
 /*Tablet*/
 
 @media only screen and (min-width: 401px) and (max-width: 1000px) {
-    main {
+    main, .side {
         width: $ancho;
         @include orden(0, flex);
         flex-direction: column;
         padding: 0;
-        text-align: center;
     }
-    section {
+    section, .contenido-izq,
+    .contenido-der {
         width: 95%;
-        @include orden(0 auto, flex);
-        flex-direction: column;
-        padding: 1em;
+        margin: 0 auto;
+        margin-top: 1em;
+        padding: 0 1em;
     }
     .logo {
         font-size: 2em;
     }
     h1 {
-        font-size: 3em;
-        padding: 1.5em;
+        font-size: 2.5em;
+        padding: 1em;
     }
     h2 {
         font-size: 1.5em;
@@ -28,7 +28,7 @@
         border: 0;
         width: 100%;
     }
-    input, textarea {
+    input, textarea, select {
         width: 95%;
     }
 }
@@ -37,7 +37,7 @@
 /* Mobile */
 
 @media only screen and (max-width: 400px) {
-    main {
+    main, .side {
         width: $ancho;
         @include orden(0 auto, flex);
         flex-direction: column;
@@ -81,7 +81,7 @@
         text-align: left;
     }
 
-    input, textarea {
+    input, textarea, select {
         width: 100%;
     }
     iframe {

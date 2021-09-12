@@ -15,11 +15,16 @@ main {
     }
 }
 
-
 .flex-column {
     display: flex;
     flex-direction: column;
 }
+
+.side {
+    margin: 2em 0 0 0;
+    display: flex;
+
+  }
 
 .index {
     background-color: rgba(black, 0.3);
@@ -106,6 +111,7 @@ h2 {
     }
 }
 .imagen-redondeada {
+    max-width: 800px;
     width: 90%;
     border-radius: 2em;
 }

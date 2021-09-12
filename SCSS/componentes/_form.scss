@@ -3,9 +3,9 @@ form {
     display: flex;
     flex-direction: column;
 	width: 100%;
+	justify-content: center;
 }
 input, textarea, select {
-	justify-content: center;
 	font-family: Trebuchet MS;
 	border: 0;
 	border-bottom: 4px darken($bordo, 10%) solid;
