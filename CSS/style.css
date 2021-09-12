@@ -159,8 +159,12 @@ h2 {
   padding: 0;
   letter-spacing: 0;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: #346751;
+}
+.destacado:hover,
+.destacado a:hover {
+  text-decoration: underline;
 }
 
 .agenda {
@@ -237,15 +241,17 @@ form {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-input, textarea {
+input, textarea, select {
+  justify-content: center;
   font-family: Trebuchet MS;
   border: 0;
   border-bottom: 4px #4e0b25 solid;
   border-radius: 5px;
   padding: 10px;
-  margin: 0.5em;
+  margin: 0.5em 0;
   font-size: 16px;
   width: 80%;
 }
@@ -259,18 +265,22 @@ button {
 }
 
 /*Tablet*/
-@media only screen and (min-width: 401px) and (max-width: 900px) {
-  section {
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+  main {
     width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  section {
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     padding: 1em;
-  }
-
-  .quienes-somos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
   .logo {
@@ -292,30 +302,34 @@ button {
   }
 
   input, textarea {
-    width: 100%;
-  }
-
-  .imagen-redondeada {
-    width: 100%;
+    width: 95%;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 400px) {
   main {
     width: 100%;
-    margin: 0.5em auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0 2em;
+    padding: 0;
     text-align: center;
   }
 
+  section, .contenido-izq,
+.contenido-der {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 0 1em;
+  }
+
   .logo {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 1.6em;
     padding: 0.2em;
   }
 
@@ -324,7 +338,7 @@ button {
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   li {
@@ -341,18 +355,15 @@ button {
     flex-direction: column;
     margin: 0 auto;
     justify-content: flex-start;
-  }
-
-  iframe {
-    border: 0;
-    width: 100%;
+    text-align: left;
   }
 
   input, textarea {
     width: 100%;
   }
 
-  .imagen-redondeada {
+  iframe {
+    border: 0;
     width: 100%;
   }
 

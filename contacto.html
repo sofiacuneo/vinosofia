@@ -35,14 +35,14 @@
 <body>
     <header>
         <!-- logo + zona navegable -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-orange">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-orange">
           <div class="container-fluid">
             <p class="logo animacion">Vinosofía</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end text-md-end" id="navbarNav">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Inicio</a>
                 </li>
@@ -78,9 +78,8 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/bg-contacto.png" class="d-block w-100" alt="contacto">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
                 <h1>Contacto</h1>
-                <p class="texto-1">En Vinosofía queremos conocerte. Podés contactarnos a través del formulario y dejarnos comentarios, consultas o sugerencias.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -108,19 +107,27 @@
 	<!-- Cierra carousel -->
 
     <!-- main -->
-    <main >
+    <main>
         <!-- section 1 -->
         <section class="contenido-izq">  
-          <p class="texto-1">Los invitamos a llenar este formulario para reservar su visita a la bodega.<br> Les responderemos a la brevedad. ¡Gracias!</p>
+          <p class="texto-1">Los invitamos a llenar este formulario para reservar tu visita a la bodega.<br> Les responderemos a la brevedad. ¡Gracias!</p>
           <!-- Formulario -->
           <form action="enviar.php" method="POST" name="contact-form">
             <input type="text" id="name" name="nombre" placeholder="Nombre">
 
-            <input type="email" name="email" id="mail" placeholder="E-mail">
+            <input type="email" name="email" id="mail" placeholder="E-mail"><br>
         
-            <input type="subject" id="fecha" name="fecha" placeholder="Fecha elegida">
+            <p class="texto-1">Fecha elegida:</p> 
+				<select id="date" name="fecha-elegida">
+					<option> 02.07 | 15hs. Visita exclusiva para conocer lanzamientos del mes.</option>
+					<option> 05.07 | 15hs. Visita completa a la bodega + cata.</option>
+					<option> 12.07 | 21hs. Visita nocturna, especial bajo las velas.</option>
+          <option> 18.07 | 15hs. Visita completa a la bodega + cata.</option>
+          <option> 20.07 | 15hs. Visita completa a la bodega + cata.</option>
+					<option> 25.07 | 21hs. Visita nocturna, especial bajo las velas.</option>
+				</select>
         
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <textarea name="mensaje" id="mensaje" cols="20" rows="10" placeholder="Mensaje"></textarea>
         
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-light btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">

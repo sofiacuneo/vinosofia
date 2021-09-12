@@ -1,16 +1,18 @@
 /*Tablet*/
 
-@media only screen and (min-width: 401px) and (max-width: 900px) {
+@media only screen and (min-width: 401px) and (max-width: 1000px) {
+    main {
+        width: $ancho;
+        @include orden(0, flex);
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
     section {
-        width: 100%;
-        display: flex;
+        width: 95%;
+        @include orden(0 auto, flex);
         flex-direction: column;
         padding: 1em;
-    }
-    .quienes-somos {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
     }
     .logo {
         font-size: 2em;
@@ -26,13 +28,8 @@
         border: 0;
         width: 100%;
     }
-    
-    input, textarea{
-        width: $ancho;
-    }
-
-    .imagen-redondeada {
-        width: 100%;
+    input, textarea {
+        width: 95%;
     }
 }
 
@@ -42,24 +39,31 @@
 @media only screen and (max-width: 400px) {
     main {
         width: $ancho;
-        @include orden(0.5em auto, flex);
+        @include orden(0 auto, flex);
         flex-direction: column;
-        padding: 0 2em;
+        padding: 0;
         text-align: center;
+    }
+    section, .contenido-izq,
+    .contenido-der {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 1em;
+        padding: 0 1em;
     }
 
     .logo {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.6em;
         padding: 0.2em;
     }
     .index h1 {
         padding: 1em 0;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     li {
         width: 30%;
@@ -74,20 +78,17 @@
         flex-direction: column;
         margin: 0 auto;
         justify-content:flex-start;
+        text-align: left;
+    }
+
+    input, textarea {
+        width: 100%;
     }
     iframe {
         border: 0;
         width: 100%;
     }
 
-    input, textarea{
-        width: $ancho;
-    }
-
-    .imagen-redondeada {
-        width: 100%;
-    }
-    
     footer a {
         justify-content: space-between;
         padding: 2em;
